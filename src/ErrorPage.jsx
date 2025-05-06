@@ -44,7 +44,7 @@ export default function ErrorPage({ message }) {
               </>
             )}
           </Paper>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/Loan-Calculator/">Home</NavLink>
         </Box>
       </Container>
     </>

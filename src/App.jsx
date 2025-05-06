@@ -9,7 +9,7 @@ import "./App.css";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Loan-Calculator/",
     element: <Layout />,
     children: [
       {

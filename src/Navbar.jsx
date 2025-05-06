@@ -64,7 +64,7 @@ export default function Navbar() {
               }}
             >
               <NavLink
-                to="/"
+                to="/Loan-Calculator/"
                 style={({ isActive }) => {
                   if (isActive) {
                     return {
@@ -147,7 +147,7 @@ export default function Navbar() {
             <List>
               <ListItem disablePadding>
                 <NavLink
-                  to="/"
+                  to="/Loan-Calculator/"
                   style={({ isActive }) => {
                     if (isActive) {
                       return {
