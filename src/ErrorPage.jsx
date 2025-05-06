@@ -1,6 +1,7 @@
 import { Padding } from "@mui/icons-material";
 import { CssBaseline, Paper, Typography, Container, Box } from "@mui/material";
 import { NavLink } from "react-router-dom";
+import errorImg from "./assets/error.svg";
 
 export default function ErrorPage({ message }) {
   return (
@@ -19,7 +20,18 @@ export default function ErrorPage({ message }) {
         >
           <Paper elevation={3} sx={{ padding: "20px 50px" }}>
             {message ? (
-              <Typography variant="subtitle2">{message}</Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <img src={errorImg} style={{ width: "100px" }}></img>
+                <Typography variant="subtitle2">{message}</Typography>
+              </Box>
             ) : (
               <>
                 <Typography

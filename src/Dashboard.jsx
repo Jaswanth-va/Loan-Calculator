@@ -36,7 +36,9 @@ export default function Dashboard() {
   if (exchangeData) {
     multiplier = exchangeData[String(currency)];
   }
-  const currencyArray = ["USD", "EUR", "INR", "GBP", "JPY", "AUD", "CAD"];
+  const currencyArray = exchangeData
+    ? ["USD", "EUR", "INR", "GBP", "JPY", "AUD", "CAD"]
+    : ["USD"];
 
   useEffect(() => {
     async function fetchData() {
@@ -49,7 +51,8 @@ export default function Dashboard() {
           setError(null);
         }
       } catch (error) {
-        setError(error);
+        console.log(error);
+        // setError(error);
       }
     }
     fetchData();

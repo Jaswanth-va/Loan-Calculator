@@ -136,7 +136,6 @@ export default function ExchangeRates() {
     fetchData();
   }, []);
 
-  
   return (
     <>
       {error ? (
