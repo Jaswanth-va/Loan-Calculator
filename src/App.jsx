@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "",
+        path: "/Loan-Calculator/",
         element: <Dashboard />,
         error: <ErrorPage message={"Something went wrong"} />,
       },
